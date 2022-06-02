@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Programming Language Suggester</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Welcome To The Programming Language Suggester!</h1>
+      <p>So you've decided you want to learn how to code. Congratulations! There are hundreds of programming languages out there, so how do you know you are choosing the right one? Do not worry! You've come to the right place. The <strong>amazing</strong> and <strong>definitive</strong> Programming Language Suggester will analyze your responses to the following questions and tell you which is the perfect first language for you.</p>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <form id="questions">
+          <div class="form-group">
+            <label for="name">Please enter your name</label>
+            <input id="name" class="form-control" type="text" required>
+          </div>
+          <label for="ques1">What do you want to program for?</label>
+          <select class="form-control" id="color" required>
+            <option value=""></option>
+            <option value="a">To get rich</option>
+            <option value="b">To create interesting programs</option>
+            <option value="c">To become smart</option>
+          </select>
+          <label for="ques2">What do you want the programming language to be??</label>
+          <select class="form-control" id="age" required>
+            <option value=""></option>
+            <option value="a">Simple</option>
+            <option value="b">Flexible</option>
+            <option value="c">innovative</option>
+          </select>
+          <label for="ques3">What language do you want to learn in terms of difficulty??</label>
+          <select class="form-control" id="socks" required>
+            <option value=""></option>
+            <option value="a">Easy</option>
+            <option value="b">Medium</option>
+            <option value="c">Hard</option>
+          </select>
+          <label for="ques4">What applications do you want to create?</label>
+          <select class="form-control" id="drink" required>
+            <option value=""></option>
+            <option value="a">Website</option>
+            <option value="b">Mobile applications</option>
+            <option value="c">Desktop applications</option>
+          </select>
+          <label for="ques5">Do you really like video games?</label>
+          <select class="form-control" id="eliminate" required>
+            <option value=""></option>
+            <option value="a">I like it</option>
+            <option value="b">Neutral</option>
+            <option value="c">I hate it</option>
+          </select>
+          <button type="submit" class="btn">Show me my language!</button>   
+        </form>
+        <div class="tie">
+          <form id="tied">
+            <label for="tie-breaker">Okay just one more question. Do you prefer:</label>
+            <select class="form-control" id="tie-breaker" required>
+              <option value=""></option>
+              <option>Tea</option>
+              <option>Or Coffee</option>
+            </select>
+            <button type="submit" class="btn">Continue</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6" id="results">
+        <div class="show-results">
+          <h1><span id="insert-name"></span>'S RESULTS</h1>
+          <p>Thank you for submitting your answers. We have reviewed the results using only the most top-notch-peer-reviewed scientific methods and have come to the conclussion that <span id="result"></span> is the best language for you to learn!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

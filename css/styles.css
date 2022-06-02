@@ -1,0 +1,53 @@
+body {
+  background-color: rgb(224, 238, 241);
+}
+
+.english, .spanish {
+  display:none;
+}
+
+.jumbotron {
+  background-image: linear-gradient(to bottom right, rgb(199, 223, 229), rgb(146, 184, 196));
+  text-align: center;
+  font-family:monospace;
+  margin-top: 3px;
+}
+
+.jumbotron p {
+  box-sizing: border-box;  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+}
+
+.btn {
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom:10px;
+}
+
+#name, #color, #age, #socks, #drink, #eliminate, #tie-breaker {
+  width: 90%;
+}
+
+.tie, .show-results, #ruby, #results {
+  display:none;
+}
+
+#results {
+  box-sizing: border-box;
+  border: 5px dotted rgb(111, 55, 164);
+  margin: auto;
+  width: 80%;
+  height: auto;
+  padding: 70px;
+  text-align: center;
+  font-size: larger;
+}
+
+#results h1 {
+  padding-bottom: 25px;
+  font-family: fantasy;
+}
+
+
